@@ -1,5 +1,9 @@
+$body-font-family-new: "Roboto Mono", monospace;
+$body-font-family: $body-font-family-new, monospace;
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
+  font-style:normal;
 }
