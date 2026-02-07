@@ -1,5 +1,14 @@
+/** Wrappers **/
+$grid-container-max-width: 1264px;
+
+/** Typography **/
+
 $body-font-family-new: "Roboto Mono", monospace;
 $body-heading-font-family: "Inter", sans-serif;
+$upper-case: uppercase;
+$text-white: #fff;
+
+/** Colors **/
 $yellow-color: rgba(255, 186, 0, 1);
 $blue-color: rgba(0, 38, 87, 1);
 $dark-blue-color: rgba(34, 36, 48, 1);
@@ -10,7 +19,6 @@ $light-grey-color:rgba(46, 48, 46, 1);
 $light-grey-color-2:rgba(70, 79, 110, 1);
 $light-grey-color-3:#EFF7FA;
 $light-grey-color-4:#434C6C;
+$light-grey-color-5:rgba(245, 254, 255, 1);
 $grey-color:#2E302E;
-$upper-case: uppercase;
-$text-white: #fff;
-$grid-container-max-width: 1264px;
+$green-clor: rgba(29, 60, 52, 1);
