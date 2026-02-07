@@ -1,9 +1,445 @@
-$body-font-family-new: "Roboto Mono", monospace;
-$body-font-family: $body-font-family-new, monospace;
+@import "variables";
+@import "functions";
+
+
+body{
+  font-family: $body-font-family-new;
+  color: $grey-color;
+  line-height: 24px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style:normal;
+}
+
+
+
+/** header styles **/
+
+header {
+  .grid-container {
+        max-width: 1440px;
+  }
+  .top-bar{
+    background-color: $yellow-color;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    p {
+      padding: 0;
+      text-transform: $upper-case;
+      margin: 0;;
+      font-size: .75em;
+    }
+  }
+  .navigation {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+  }
+  .toggle-menu {
+    padding-left: 1.5em;
+    padding-right: 1em;
+    img {
+      max-height:1.6em;
+    }
+  }
+  .logo img {
+    max-height:4.6em;
+  }
+  .navCTA {
+    margin-left: auto;
+    img {
+      max-height: 1.3em;
+      margin-left: 18px;
+      margin-right: 29px
+    }
+    button {
+      @include ctaButton(13px 40.5px, 18px, $dark-blue-color, 1.95em);
+      text-transform: $upper-case;
+      margin: 0;
+    }
+  }
+}
+
+/** Main Section **/
+
+.grid-container {
+  max-width: $grid-container-max-width;
+}
+
+.light-blue-bg {
+  background-color: $light-blue-color;
+}
+
+/** Hero Section **/
+
+.hero-banner {
+  background: linear-gradient( 232deg , rgba(70, 78, 112, 1) 0% , rgba(32, 55, 70, 1) 100% );
+  color: $text-white;
+  padding-top:59px;
+  padding-bottom: 71px;
+  h1 {
+    text-transform: $upper-case;
+    font-size: 64px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -1.07px;
+    line-height: 55px;
+    margin-bottom: 19px;
+  }
+  p {
+    text-transform: $upper-case;
+    font-size: 18px;
+    margin-bottom: 21px; 
+  }
+
+  button {
+      @include ctaButton(15.5px 102.5px, 18px, $yellow-color, 1.95em);
+      text-transform: $upper-case;
+      margin: 0;
+      color: #111;
+      line-height: 24px;
+    }
+
+  .testimonial-card {
+    margin-top: 170px;
+    p {
+      line-height: 24px;
+      margin-top: 15px;
+      margin-bottom: 18px;
+      text-transform: $upper-case;   
+    }
+    img {
+      max-height: 39px;
+    }
+    .author {
+      font-size: 14px;
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .hero-img {
+      width: 611px !important;
+      position: absolute;
+      margin-left: -200px;
+      z-index: 0;
+      margin-top: -31px;
+    }
+
+  }
+  
+}
+
+/** About Us Section **/
+
+.about-us-section {
+  padding-top: 42px;
+  padding-bottom: 67px;
+  .welcome-bar {
+    background-color: $yellow-color;
+    border-radius: 35px;
+    padding:14px 15px 18px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+  h2 {
+    @include headTitleText(80px, 72px, $grey-color, 37px, $upper-case);
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+  ul {
+    @include customBullet();
+  }
+  img {
+    max-height: 760px;
+  }
+}
+
+/** Features Section **/
+
+.featured-icons-section {
+    background-color: $light-blue-color;
+    padding-bottom: 58px;
+  .grid-container {
+    background-color: $white-color;
+    border-radius: 35px;
+    
+  }
+  .icon-card {
+    padding: 74px 48px 73px 38px;
+    }
+  img {
+    max-height: 135px;
+    width: auto;
+  }
+  h3 {
+    color: $light-grey-color;
+    line-height: 24px;
+    font-size: 18px;
+    padding-left: 19px;
+    font-weight: 400;
+    font-family: $body-font-family-new;
+  }
+}
+
+/** Product Section **/
+
+.product-section {
+  background-color: $light-blue-color;
+  border-bottom: 1px solid $light-grey-color-2;
+  .grid-container {
+    padding-top: 58px;
+    padding-bottom: 79px;
+  }
+
+  .headline {
+    text-align: center;
+    p {
+      font-size: 18px;
+      margin-bottom: 37px;
+    }
+    img {
+      max-height: 109px;
+      margin-bottom: 35px;
+      border-radius: 50px;
+    }
+    h2 {
+      @include headTitleText(80px, 52px, $grey-color, 90px, $upper-case);
+    }
+  }
+
+  .product-icons {
+    
+    .item {
+      max-width: 333px;
+      .num-icon {
+        width: 50px;
+        height: 50px;
+        background-color: $white-color;
+        font-family: $body-heading-font-family;
+        font-size: 26px;
+        text-align: center;
+        position: absolute;
+        margin-top: 26px;
+        margin-left: 26px;
+        border-radius: 50px;
+        border: 1.5px solid $grey-color;
+        z-index: 2;
+        display: block;
+        line-height: 46px;
+        font-weight: 900;
+      }
+    }
+    img {
+      max-height: 480px;
+    }
+    .icon-card {
+      margin-top: 22px;
+      img {
+        max-width: 67px;
+        margin-right: 8px
+      }
+      h3 {
+        color: $light-grey-color;
+        line-height: 24px;
+        font-size: 18px;
+        padding-left: 19px;
+        font-weight: 400;
+        font-family: $body-font-family-new;
+      }
+    }
+  }
+
+}
+
+/** Result Section **/
+
+.result-section {
+  background-color: $light-blue-color;
+  padding-top: 73px;
+  h2 {
+      @include headTitleText(50px, 52px, $grey-color, 26px, $upper-case);
+      text-transform: $upper-case;
+      margin-bottom: 26px;
+  }
+
+  .hero-banner-2 {
+    background-image: url(../images/AdobeStock_450000130-1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 756px;
+    p {
+      @include headTitleText(50px, 52px, $light-grey-color-3, 0, $upper-case);
+      font-weight: 900;
+      font-family: $body-heading-font-family;
+    }
+  }
+
+  .benifits-list {
+    background-color: $light-blue-color;
+    ul {
+      @include customBullet();
+      margin-top: 30px;
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      li {
+        font-size: 20px;
+        font-size: 19px;
+        padding-left: 33px;
+        margin-right: 33px;
+        font-family: $body-heading-font-family;
+        align-self: center;
+        font-weight: 900;
+        text-transform: $upper-case;
+      }
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .headline {
+      margin-bottom: 59px;
+      p {
+        max-width: 702px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}
+
+/** Benefit Section **/
+
+.benefit-section {
+  background-color: $light-blue-color;
+  border-bottom: 1px solid $light-grey-color-2;
+  padding-top: 41px;
+  padding-bottom: 93px;
+  h2 {
+    @include headTitleText(50px, 52px, $grey-color, 15px, $upper-case);
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 51px;
+  }
+
+  .benefit-list {
+    .item {
+      max-width: 364px;
+      img {
+        margin-bottom: 33px;
+        border-radius: 19px;
+      }
+      h3 {
+        @include headTitleText(23px, 22px, $grey-color, 20px, $upper-case);
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top:auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+/** Featured Product Section **/
+
+.feature-product-section {
+  padding-top: 79px;
+  padding-bottom: 68px;
+  background-color: $white-color;
+  border-bottom: 1px solid $light-grey-color-2;
+  p.highlightText{
+    @include highlightText();
+    margin-bottom:28px;
+  }
+
+  h2 {
+    @include headTitleText(80px, 72px, $grey-color, 37px, $upper-case);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 47px;
+  }
+  ul {
+    @include customBullet();
+    li {
+      margin-bottom: 24px;
+    }
+  }
+  img {
+    max-height: 512px;
+  }
+  button {
+    @include ctaButton(17px 40px 23px, 18px, $dark-blue-color, 35px);
+    del {
+      color :  $light-grey-color-3;
+      opacity: 0.2;
+      }
+  }
+}
+
+/** Ingredients Section **/
+
+.ingredients-section {
+  background-color: $light-blue-color;
+  padding-bottom: 140px;
+  padding-top: 99px;
+  .headline {
+    h2 {
+      @include headTitleText(50px, 52px, $grey-color, 31px, $upper-case); 
+    }
+    button {
+      @include ctaButton(17px 40px 23px, 18px, $yellow-color, 35px);
+      text-transform: uppercase;
+      color:$grey-color;
+      margin-bottom: 56px;
+    }
+  }
+
+  .featured-icons {
+    img {
+      max-width: 132px;
+      margin-right: 26px;
+      border-radius: 19px;
+    }
+
+    .icon-card {
+      margin-bottom: 54px;
+    }
+
+    .info {
+      color: $light-grey-color-4;
+      h3 {
+        margin-bottom: 11px;
+        font-family: $body-font-family-new;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
 }

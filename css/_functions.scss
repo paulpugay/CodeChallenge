@@ -1,0 +1,48 @@
+@mixin ctaButton($padding, $font-size, $background-color, $radius ){
+  border-radius: $radius;
+  background-color: $background-color;
+  padding: $padding;
+  font-size: $font-size;
+}
+
+@mixin headTitleText($font-size, $line-height, $color,$margin-bottom,$upper-case) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    margin-bottom: $margin-bottom;
+    text-transform: $upper-case;
+    letter-spacing: -0.83px;
+}
+
+@mixin customBullet {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    li {
+        padding-left: 35px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-bottom: 24px;
+        line-height: 24px;
+        &::before {
+            content: url('../images/Group\ 5-1.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                margin-left: -35px;
+                margin-top: 2px;
+        }
+    }
+}
+
+@mixin highlightText {
+    background-color: $yellow-color;
+    border-radius: 28px;
+    font-size: 18px;
+    width: fit-content;
+    padding: 5px 19px 8px 13px;
+    text-align: center;
+}
+
