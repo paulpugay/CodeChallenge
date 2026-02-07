@@ -7,11 +7,11 @@
 
 @mixin headTitleText($font-size, $line-height, $color,$margin-bottom,$upper-case) {
     font-size: $font-size;
-    line-height: $line-height;
     color: $color;
     margin-bottom: $margin-bottom;
     text-transform: $upper-case;
     letter-spacing: -0.83px;
+    line-height: $line-height;
 }
 
 @mixin customBullet {
@@ -45,4 +45,5 @@
     padding: 5px 19px 8px 13px;
     text-align: center;
 }
+
 

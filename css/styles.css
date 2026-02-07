@@ -144,11 +144,11 @@ header .navCTA button {
 }
 .about-us-section h2 {
   font-size: 80px;
-  line-height: 72px;
   color: #2E302E;
   margin-bottom: 37px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 72px;
 }
 .about-us-section p {
   font-size: 18px;
@@ -229,11 +229,11 @@ header .navCTA button {
 }
 .product-section .headline h2 {
   font-size: 80px;
-  line-height: 52px;
   color: #2E302E;
   margin-bottom: 90px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 52px;
 }
 .product-section .product-icons .item {
   max-width: 333px;
@@ -281,11 +281,11 @@ header .navCTA button {
 }
 .result-section h2 {
   font-size: 50px;
-  line-height: 52px;
   color: #2E302E;
   margin-bottom: 26px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 52px;
   text-transform: uppercase;
   margin-bottom: 26px;
 }
@@ -297,11 +297,11 @@ header .navCTA button {
 }
 .result-section .hero-banner-2 p {
   font-size: 50px;
-  line-height: 52px;
   color: #EFF7FA;
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 52px;
   font-weight: 900;
   font-family: "Inter", sans-serif;
 }
@@ -318,6 +318,7 @@ header .navCTA button {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
 }
 .result-section .benifits-list ul li {
   padding-left: 35px;
@@ -365,11 +366,11 @@ header .navCTA button {
 }
 .benefit-section h2 {
   font-size: 50px;
-  line-height: 52px;
   color: #2E302E;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 52px;
 }
 .benefit-section p {
   font-size: 18px;
@@ -384,11 +385,11 @@ header .navCTA button {
 }
 .benefit-section .benefit-list .item h3 {
   font-size: 23px;
-  line-height: 22px;
   color: #2E302E;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 22px;
 }
 .benefit-section .benefit-list .item p {
   font-size: 15px;
@@ -415,11 +416,11 @@ header .navCTA button {
 }
 .feature-product-section h2 {
   font-size: 80px;
-  line-height: 72px;
   color: #2E302E;
   margin-bottom: 37px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 72px;
 }
 .feature-product-section p {
   font-size: 18px;
@@ -473,11 +474,11 @@ header .navCTA button {
 }
 .ingredients-section .headline h2 {
   font-size: 50px;
-  line-height: 52px;
   color: #2E302E;
   margin-bottom: 31px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
+  line-height: 52px;
 }
 .ingredients-section .headline button {
   border-radius: 35px;
@@ -509,4 +510,147 @@ header .navCTA button {
 .ingredients-section .featured-icons .info p {
   font-size: 12px;
   line-height: 14px;
+}
+
+/** Formula Section **/
+.formula-section {
+  background-color: rgb(41, 42, 53);
+  color: rgb(255, 255, 255);
+  padding-bottom: 105px;
+  padding-top: 136px;
+}
+.formula-section .headline {
+  margin-bottom: 57px;
+}
+.formula-section .headline .grid-x .headline {
+  margin-bottom: 94px;
+}
+.formula-section .headline p.highlightText {
+  background-color: rgb(255, 186, 0);
+  border-radius: 28px;
+  font-size: 18px;
+  width: fit-content;
+  padding: 5px 19px 8px 13px;
+  text-align: center;
+  color: rgb(46, 48, 46);
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.formula-section .headline h2 {
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  letter-spacing: -0.83px;
+  line-height: 52px;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 74.9375em) {
+  .formula-section .headline h2 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 31px;
+    text-transform: uppercase;
+    letter-spacing: -0.83px;
+    line-height: 52px;
+  }
+}
+.formula-section .headline h4 {
+  font-family: "Roboto Mono", monospace;
+  color: rgb(255, 186, 0);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+.formula-section .headline p {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media screen and (max-width: 40em) {
+  .formula-section .formula-item.mobile-column-reverse-position {
+    flex-direction: column-reverse;
+  }
+}
+.formula-section .formula-item h3 {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.83px;
+  line-height: 52px;
+}
+.formula-section .formula-item p {
+  font-size: 18px;
+}
+.formula-section .formula-item .item-1 img {
+  max-height: 462px;
+  width: auto;
+}
+.formula-section .formula-item .item-2 img {
+  max-height: 360px;
+  width: auto;
+}
+.formula-section .formula-item .item-3 img {
+  max-height: 481px;
+  width: auto;
+}
+@media screen and (max-width: 40em) {
+  .formula-section .formula-item {
+    text-align: center;
+  }
+}
+.formula-section .testimonials {
+  gap: 25px;
+}
+.formula-section .testimonials .item {
+  background-color: rgb(255, 255, 255);
+  color: #434C6C;
+  border-radius: 39px;
+  padding: 21px 28px;
+}
+.formula-section .testimonials .item p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.formula-section .testimonials .item .star-ratings {
+  margin-bottom: 15px;
+  display: block;
+  height: auto;
+  line-height: 0;
+}
+.formula-section .testimonials img {
+  max-height: 18px;
+  width: auto;
+}
+.formula-section .testimonials .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+.formula-section .testimonials .author .name {
+  display: block;
+  color: rgb(0, 38, 87);
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+.formula-section .testimonials .author .designation {
+  font-size: 12px;
+}
+.formula-section .testimonials .author img {
+  max-height: 54px;
+  width: auto;
+}
+@media screen and (min-width: 40em) {
+  .formula-section .formula-item.grid-x {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .formula-section .testimonials .item {
+    width: calc(33.33% - 25px);
+  }
 }/*# sourceMappingURL=styles.css.map */
