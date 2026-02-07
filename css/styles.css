@@ -586,12 +586,12 @@ header .navCTA button {
   }
 }
 .feature-product-section h2 {
-  font-size: 80px;
+  font-size: 50px;
   color: #2E302E;
-  margin-bottom: 37px;
+  margin-bottom: 22px;
   text-transform: uppercase;
   letter-spacing: -0.83px;
-  line-height: 72px;
+  line-height: 52px;
 }
 @media screen and (max-width: 40em) {
   .feature-product-section h2 {
@@ -603,6 +603,9 @@ header .navCTA button {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 47px;
+}
+.feature-product-section .higlightText2 {
+  margin-bottom: 15px;
 }
 .feature-product-section ul {
   margin: 0;
@@ -648,6 +651,7 @@ header .navCTA button {
   background-color: rgb(34, 36, 48);
   padding: 17px 40px 23px;
   font-size: 18px;
+  margin-top: 9px;
 }
 .feature-product-section button del {
   color: #EFF7FA;
